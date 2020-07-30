@@ -1,0 +1,154 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    width: 155px;
+    height: 45px;
+}
+
+.session-cards {
+    background-image: url('../img/corona.jpg');
+    background-position-x: right;
+    background-repeat: no-repeat;
+    height: 518px;
+}
+
+.cards {
+    width: 55%;
+    max-width: 980px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin-top: 11em;
+    height: 146px;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #dbe9f5;
+    box-shadow: var(--ion-box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-top: 3px solid #78d278!important;
+}
+
+.card-title {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: -.41px;
+    text-transform: uppercase;
+    color: #1da584;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.card-numbers {
+    font-size: 35px;
+    color: #232a2f;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.today{
+    margin-top: 2em;
+    color: gray;
+}
+
+.ranking-title {
+    text-align: center;
+}
+
+.ranking-icon {
+    color: #ffa707;
+}
+
+.session-about {
+    background-image: url('../img/corona2.png');
+    background-position-x: left;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+@media only screen and (max-width: 764px) {
+    .description {
+        color: #fff;
+    }
+}
+
+.overlay-card-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-top: 3px solid #008CBA!important;
+}
+
+.simble-card-2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-2:hover .overlay-card-2 {
+    opacity: 1;
+}
+
+.overlay-card-1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #28a745;
+    border-top: 3px solid #28a745!important;
+}
+
+.simble-card-1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-1:hover .overlay-card-1 {
+    opacity: 1;
+}
+
+.copy-right_text {
+    padding-bottom: 20px;
+    background: #022138;
+    color: white;
+}
